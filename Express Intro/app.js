@@ -5,7 +5,7 @@ const app = express()
 
 app.use((req, res, next) => {
     console.log('In the middle ware functions')
-    next()
+    next()//next allows to flow to continue to other middleware functions
 }); //Allows to add a new middleware function. The function added here will be executed for every incoming request
 
 app.use((req, res, next) => {
